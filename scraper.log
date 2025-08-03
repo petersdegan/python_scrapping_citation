@@ -1,0 +1,321 @@
+2025-08-03 17:12:43,798 - ERROR - Scraping failed: Contenu des citations non trouvé
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 53, in scrape_quotes
+    await page.wait_for_selector('.qtw_listing', state="visible", timeout=45000)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8181, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 423, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 45000ms exceeded.
+Call log:
+  - waiting for locator(".qtw_listing") to be visible
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 57, in scrape_quotes
+    raise Exception("Contenu des citations non trouvé")
+Exception: Contenu des citations non trouvé
+2025-08-03 17:12:44,043 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 53, in scrape_quotes
+    await page.wait_for_selector('.qtw_listing', state="visible", timeout=45000)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8181, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 423, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 45000ms exceeded.
+Call log:
+  - waiting for locator(".qtw_listing") to be visible
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 180, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 57, in scrape_quotes
+    raise Exception("Contenu des citations non trouvé")
+Exception: Contenu des citations non trouvé
+2025-08-03 17:14:21,406 - ERROR - Scraping failed: Contenu des citations non trouvé
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 53, in scrape_quotes
+    await page.wait_for_selector('.qtw_listing', state="visible", timeout=45000)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8181, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 423, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 45000ms exceeded.
+Call log:
+  - waiting for locator(".qtw_listing") to be visible
+    - waiting for" https://www.brainyquote.com/quotes/nelson_mandela_378967?src=t_motivational" navigation to finish...
+    - navigated to "https://www.brainyquote.com/quotes/nelson_mandela_378967?src=t_motivational"
+    - waiting for" https://www.brainyquote.com/topics/motivational-quotes" navigation to finish...
+    - navigated to "https://www.brainyquote.com/topics/motivational-quotes"
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 57, in scrape_quotes
+    raise Exception("Contenu des citations non trouvé")
+Exception: Contenu des citations non trouvé
+2025-08-03 17:14:21,641 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 53, in scrape_quotes
+    await page.wait_for_selector('.qtw_listing', state="visible", timeout=45000)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8181, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 423, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 45000ms exceeded.
+Call log:
+  - waiting for locator(".qtw_listing") to be visible
+    - waiting for" https://www.brainyquote.com/quotes/nelson_mandela_378967?src=t_motivational" navigation to finish...
+    - navigated to "https://www.brainyquote.com/quotes/nelson_mandela_378967?src=t_motivational"
+    - waiting for" https://www.brainyquote.com/topics/motivational-quotes" navigation to finish...
+    - navigated to "https://www.brainyquote.com/topics/motivational-quotes"
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 180, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 57, in scrape_quotes
+    raise Exception("Contenu des citations non trouvé")
+Exception: Contenu des citations non trouvé
+2025-08-03 17:15:35,941 - ERROR - Scraping failed: Contenu des citations non trouvé
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 53, in scrape_quotes
+    await page.wait_for_selector('.qtw_listing', state="visible", timeout=45000)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8181, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 423, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 45000ms exceeded.
+Call log:
+  - waiting for locator(".qtw_listing") to be visible
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 57, in scrape_quotes
+    raise Exception("Contenu des citations non trouvé")
+Exception: Contenu des citations non trouvé
+2025-08-03 17:15:36,194 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 53, in scrape_quotes
+    await page.wait_for_selector('.qtw_listing', state="visible", timeout=45000)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8181, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 423, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 45000ms exceeded.
+Call log:
+  - waiting for locator(".qtw_listing") to be visible
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 180, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 57, in scrape_quotes
+    raise Exception("Contenu des citations non trouvé")
+Exception: Contenu des citations non trouvé
+2025-08-03 17:25:21,920 - ERROR - Scraping failed: Page.evaluate: SyntaxError: Illegal return statement
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 101, in scrape_quotes
+    new_height = await page.evaluate("window.scrollTo(0, document.body.scrollHeight); return document.body.scrollHeight")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8514, in evaluate
+    await self._impl_obj.evaluate(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 468, in evaluate
+    return await self._main_frame.evaluate(expression, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 320, in evaluate
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.evaluate: SyntaxError: Illegal return statement
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-08-03 17:25:22,241 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 228, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 101, in scrape_quotes
+    new_height = await page.evaluate("window.scrollTo(0, document.body.scrollHeight); return document.body.scrollHeight")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 8514, in evaluate
+    await self._impl_obj.evaluate(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 468, in evaluate
+    return await self._main_frame.evaluate(expression, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 320, in evaluate
+    await self._channel.send(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.evaluate: SyntaxError: Illegal return statement
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:291:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+2025-08-03 17:28:55,891 - INFO - HTTP Request: POST https://mnlqnczjyufixaejregb.supabase.co/rest/v1/quotes?columns=%22id%22%2C%22quote%22%2C%22link%22%2C%22author%22%2C%22topic%22 "HTTP/2 201 Created"
+2025-08-03 17:30:26,212 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 216, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 133, in scrape_quotes
+    await page.screenshot(path="error_fullpage.png", full_page=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 9739, in screenshot
+    await self._impl_obj.screenshot(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 816, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 90000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+2025-08-03 17:34:11,829 - INFO - HTTP Request: POST https://mnlqnczjyufixaejregb.supabase.co/rest/v1/quotes?columns=%22link%22%2C%22topic%22%2C%22author%22%2C%22id%22%2C%22quote%22 "HTTP/2 201 Created"
+2025-08-03 17:34:13,373 - ERROR - Scraping failed: 'APIResponse[TypeVar]' object has no attribute 'error'
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 127, in scrape_quotes
+    if insert_response.error:
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\main.py", line 991, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-08-03 17:34:13,680 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 216, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 127, in scrape_quotes
+    if insert_response.error:
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pydantic\main.py", line 991, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'APIResponse[TypeVar]' object has no attribute 'error'
+2025-08-03 17:37:18,049 - INFO - HTTP Request: POST https://mnlqnczjyufixaejregb.supabase.co/rest/v1/quotes?columns=%22quote%22%2C%22topic%22%2C%22id%22%2C%22link%22%2C%22author%22 "HTTP/2 201 Created"
+2025-08-03 17:37:18,586 - INFO - HTTP Request: GET https://mnlqnczjyufixaejregb.supabase.co/rest/v1/quotes?select=count "HTTP/2 206 Partial Content"
+2025-08-03 17:40:25,014 - INFO - HTTP Request: POST https://mnlqnczjyufixaejregb.supabase.co/rest/v1/quotes?columns=%22quote%22%2C%22link%22%2C%22author%22%2C%22id%22%2C%22topic%22 "HTTP/2 401 Unauthorized"
+2025-08-03 17:42:55,284 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 206, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 127, in scrape_quotes
+    await page.screenshot(path="error_fullpage.png", full_page=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 9739, in screenshot
+    await self._impl_obj.screenshot(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 816, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 150000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
+2025-08-03 17:45:02,046 - INFO - HTTP Request: POST https://mnlqnczjyufixaejregb.supabase.co/rest/v1/quotes?columns=%22author%22%2C%22link%22%2C%22quote%22%2C%22topic%22%2C%22id%22 "HTTP/2 401 Unauthorized"
+2025-08-03 17:47:32,291 - ERROR - Scraping failed
+Traceback (most recent call last):
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 206, in main
+    quotes = await scrape_quotes("motivational")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\backend_scrapping\scrapper.py", line 127, in scrape_quotes
+    await page.screenshot(path="error_fullpage.png", full_page=True)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\async_api\_generated.py", line 9739, in screenshot
+    await self._impl_obj.screenshot(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_page.py", line 816, in screenshot
+    encoded_binary = await self._channel.send(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.screenshot: Timeout 150000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+  - fonts loaded
+
